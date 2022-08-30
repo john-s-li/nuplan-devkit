@@ -33,12 +33,12 @@ To get everything up and running for Apple silicon devices, run:
 $ conda env create -f environment.yml
 $ pip install -e .
 ```
-Then in your `~/.zshrc` file, add the following lines:
+
+If you choose to not put the `nuplan-devkit` folder in your `$HOME` directory like me, run the following:
 ```
 $ echo "export NUPLAN_DATA_ROOT="$(pwd)/nuplan/dataset"" >> ~/.zshrc
 $ echo "export NUPLAN_MAPS_ROOT="$(pwd)/nuplan/dataset/maps"" >> ~/.zshrc
 $ echo "export NUPLAN_EXP_ROOT="$(pwd)/nuplan/exp"" >> ~/.zshrc
-
 ```
 ______________________________________________________________________
 
