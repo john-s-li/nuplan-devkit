@@ -5,6 +5,9 @@ dependencies:
   - python=3.9
   - pip=21.2.4
   - nb_conda_kernels
+  - casadi
+  - geopandas
+  - pyogrio
   - pip:
     - -r requirements_torch.txt
     - -r requirements.txt

@@ -1,8 +1,13 @@
---find-links https://download.pytorch.org/whl/torch_stable.html
---find-links https://data.pyg.org/whl/torch-1.9.0+cu111.html
+--find-links https://download.pytorch.org/whl/torch_stable.html; sys_platform = "Linux"
+--find-links https://data.pyg.org/whl/torch-1.9.0+cu111.html; sys_platform == "Linux"
 
-torch==1.9.0+cu111;      platform_system == "Linux"
-torch==1.9.0;            platform_system == "Darwin"
-torch-scatter==2.0.9;    platform_system == "Linux"
-torchmetrics==0.7.2
-torchvision==0.10.0+cu111
+torch==1.9.0+cu111;        sys_platform == "Linux"
+torch-scatter==2.0.9;      sys_platform == "Linux"
+torchmetrics==0.7.2;       sys_platform == "Linux"
+torchvision==0.10.0+cu111; sys_platform == "Linux"
+
+# for MPS accelerated torch on Mac
+--pre --extra-index-url https://download.pytorch.org/whl/nightly/cpu; sys_platform == "darwin"
+torch==1.10.2; sys_platform == "darwin"
+torchvision==0.11.3; sys_platform == "darwin"
+pytorch-lightning==1.5.10; sys_platform == "darwin"

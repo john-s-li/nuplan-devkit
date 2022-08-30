@@ -1,5 +1,4 @@
 import os
-
 import setuptools
 
 # Change directory to allow installation from anywhere

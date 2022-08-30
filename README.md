@@ -27,11 +27,16 @@ ______________________________________________________________________
 </div>
 
 ______________________________________________________________________
-## Planning challenges
-Stay tuned for the upcoming nuPlan ML planning challenges!
+## a fork off of nuplan-devkit for Apple Silicon with Pytorch GPU acceleration
+To create conda environment for Apple silicon devices, simply run: 
+```
+$ conda env create -f environment.yml
+```
 ______________________________________________________________________
 
 ## Changelog
+- **Aug 30 2022 (by john-s-li)**
+  * Modified files for Apple Silicon miniforge compatability: *environment.yml*, *requirements_torch.txt*, and *requirements.txt*
 - Aug 26 2022
   * v0.5 Devkit: New map features, simulation improvements, open-loop detections with smart agents, iLQR tracker, metrics improvements and documentation.
 - Aug 05 2022
@@ -46,7 +51,6 @@ ______________________________________________________________________
 - Dec 10 2021
   * v0.1 Dataset: Initial teaser nuPlan dataset release with over 200 hours of driving data (350+ logs) across Las Vegas.
   * v0.1 Devkit: Initial nuPlan devkit release.
-
 
 ______________________________________________________________________
 
