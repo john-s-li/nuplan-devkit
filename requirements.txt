@@ -23,6 +23,7 @@ opencv-python<=4.5.1.48  # Used widely
 pandas    # Used widely
 Pillow    # Used widely to render images
 pre-commit  # Used in pre-commit hooks
+protobuf==3.19.4 # for inline tensorboard display on M1 macs
 psutil  # Used widely to get the number of CPUs
 pyarrow # For parquet
 pygeos
