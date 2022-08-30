@@ -27,10 +27,18 @@ ______________________________________________________________________
 </div>
 
 ______________________________________________________________________
-## a fork off of nuplan-devkit for Apple Silicon with Pytorch GPU acceleration
-To create conda environment for Apple silicon devices, simply run: 
+## nuplan-devkit for Apple Silicon with Pytorch GPU acceleration (by john-s-li)
+To get everything up and running for Apple silicon devices, run: 
 ```
 $ conda env create -f environment.yml
+$ pip install -e .
+```
+Then in your `~/.zshrc` file, add the following lines:
+```
+$ export NUPLAN_DATA_ROOT="$(pwd)/nuplan/dataset"
+$ export NUPLAN_MAPS_ROOT="$(pwd)/nuplan/dataset/maps"
+$ export NUPLAN_EXP_ROOT="$(pwd)/nuplan/exp"
+
 ```
 ______________________________________________________________________
 
