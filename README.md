@@ -35,9 +35,9 @@ $ pip install -e .
 ```
 Then in your `~/.zshrc` file, add the following lines:
 ```
-$ export NUPLAN_DATA_ROOT="$(pwd)/nuplan/dataset"
-$ export NUPLAN_MAPS_ROOT="$(pwd)/nuplan/dataset/maps"
-$ export NUPLAN_EXP_ROOT="$(pwd)/nuplan/exp"
+$ echo "export NUPLAN_DATA_ROOT="$(pwd)/nuplan/dataset"" >> ~/.zshrc
+$ echo "export NUPLAN_MAPS_ROOT="$(pwd)/nuplan/dataset/maps"" >> ~/.zshrc
+$ echo "export NUPLAN_EXP_ROOT="$(pwd)/nuplan/exp"" >> ~/.zshrc
 
 ```
 ______________________________________________________________________
