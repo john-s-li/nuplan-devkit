@@ -40,6 +40,11 @@ $ echo "export NUPLAN_DATA_ROOT="$(pwd)/nuplan/dataset"" >> ~/.zshrc
 $ echo "export NUPLAN_MAPS_ROOT="$(pwd)/nuplan/dataset/maps"" >> ~/.zshrc
 $ echo "export NUPLAN_EXP_ROOT="$(pwd)/nuplan/exp"" >> ~/.zshrc
 ```
+
+Then,
+```
+$ source ~/.zshrc
+```
 ______________________________________________________________________
 
 ## Changelog
