@@ -8,6 +8,6 @@ torchvision==0.10.0+cu111; sys_platform == "Linux"
 
 # for MPS accelerated torch on Mac
 --pre --extra-index-url https://download.pytorch.org/whl/nightly/cpu; sys_platform == "darwin"
-torch==1.10.2; sys_platform == "darwin"
-torchvision==0.11.3; sys_platform == "darwin"
-pytorch-lightning==1.5.10; sys_platform == "darwin"
+torch==1.12; sys_platform == "darwin"
+torchvision; sys_platform == "darwin"
+pytorch-lightning==1.7; sys_platform == "darwin"

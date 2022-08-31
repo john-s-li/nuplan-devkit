@@ -31,7 +31,6 @@ pyinstrument    # Used widely as profiler
 #pyogrio # A performant backend for geopandas (moved to conda-forge depencies)
 pyquaternion>=0.9.5  # Used widely, avoid known bug with quaternion slerp
 pytest    # Used widely
-pytorch-lightning  # removed specific version number for M1 support
 rasterio  # Used in GpkgMapsDB.py
 ray[default]  # Used widely
 requests  # Used in BlobStore classes
