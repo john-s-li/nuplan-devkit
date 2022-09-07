@@ -9,8 +9,6 @@ descartes  # Used in map_explorer.py
 docker  # To run remote submissions
 Fiona  # Used in GpkgMapsDB.py
 #geopandas  # Used to read maps (moved to conda-forge dependencies)
-grpcio  # Used for communication with submission container
-grpcio-tools  # Used for communication with submission container
 guppy3==3.1.2
 hydra-core==1.1.0rc1  # Used for configs
 joblib
@@ -42,7 +40,6 @@ Shapely  # Used widely
 SQLAlchemy>=1.4.27  # older versions don't work with some table definitions
 sympy  # Use for symbolic algebra
 testbook  # Used in testing jupyter notebooks
-timm  # Used in model_raster
 tornado  # Used in nuboard.py
 tqdm  # Used widely
 typer # Used for cli

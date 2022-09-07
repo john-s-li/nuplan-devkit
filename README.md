@@ -1,32 +1,3 @@
-<div align="center">
-
-# nuPlan
-**The world's first benchmark for autonomous vehicle planning.**
-
-______________________________________________________________________
-
-<p align="center">
-  <a href="https://www.nuplan.org/">Website</a> •
-  <a href="https://www.nuscenes.org/nuplan#download">Download</a> •
-  <a href="#citation">Citation</a><br>
-  <a href="#changelog">Changelog</a> •
-  <a href="#devkit-structure">Structure</a><br>
-  <a href="https://github.com/motional/nuplan-devkit/blob/master/docs/installation.md">Setup</a> •
-  <a href="https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_framework.ipynb">Tutorial</a>
-</p>
-
-[![python](https://img.shields.io/badge/python-%20%203.9-blue.svg)]()
-[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/motional/nuplan-devkit/blob/master/LICENSE.txt)
-
-______________________________________________________________________
-
-<br>
-
-<p align="center"><img src="https://www.nuplan.org/static/media/nuPlan_final.3fde7586.png" width="500px"></p>
-
-</div>
-
-______________________________________________________________________
 ## nuplan-devkit for Apple Silicon with Pytorch GPU acceleration (by john-s-li)
 To get everything up and running for Apple silicon devices, run: 
 ```
@@ -47,6 +18,28 @@ $ source ~/.zshrc
 ```
 ______________________________________________________________________
 
+
+<div align="center">
+
+# nuPlan
+**The world's first benchmark for autonomous vehicle planning.**
+
+<p align="center">
+  <a href="https://www.nuplan.org/">Website</a> •
+  <a href="https://www.nuscenes.org/nuplan#download">Download</a> •
+  <a href="#citation">Citation</a><br>
+  <a href="#changelog">Changelog</a> •
+  <a href="#devkit-structure">Structure</a><br>
+  <a href="https://github.com/motional/nuplan-devkit/blob/master/docs/installation.md">Setup</a> •
+  <a href="https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_framework.ipynb">Tutorial</a>
+</p>
+
+[![python](https://img.shields.io/badge/python-%20%203.9-blue.svg)]()
+[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/motional/nuplan-devkit/blob/master/LICENSE.txt)
+
+</div>
+
+______________________________________________________________________
 ## Changelog
 - **Aug 30 2022 (by john-s-li)**
   * Modified files for Apple Silicon miniforge compatability: *environment.yml*, *requirements_torch.txt*, and *requirements.txt*

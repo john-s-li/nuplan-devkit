@@ -8,6 +8,9 @@ dependencies:
   - casadi
   - geopandas
   - pyogrio
+  - grpcio  # Used for communication with submission container
+  - grpcio-tools  # Used for communication with submission container
+  - timm  # Used inc model_raster
   - pip:
     - -r requirements_torch.txt
     - -r requirements.txt
