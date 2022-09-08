@@ -107,6 +107,7 @@ def build_trainer(cfg: DictConfig) -> pl.Trainer:
 
     if params.gpus:
         callbacks.append(pl.callbacks.GPUStatsMonitor(intra_step_time=True, inter_step_time=True))
+        #callbacks.append(pl.callbacks.DeviceStatsMonitor()) # for latest version of lightning
 
     plugins = [
         pl.plugins.DDPPlugin(find_unused_parameters=False, num_nodes=params.num_nodes),

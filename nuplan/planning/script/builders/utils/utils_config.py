@@ -36,7 +36,9 @@ def update_config_for_training(cfg: DictConfig) -> None:
     if cfg.lightning.trainer.overfitting.enable:
         cfg.data_loader.params.num_workers = 0
 
-    if cfg.gpu and torch.cuda.is_available():
+    # modify for apple silicon
+    #if cfg.gpu and torch.cuda.is_available():
+    if cfg.gpu and torch.backends.mps.is_available():
         cfg.lightning.trainer.params.gpus = -1
     else:
         cfg.lightning.trainer.params.gpus = None

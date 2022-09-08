@@ -1,7 +1,7 @@
 # Common experiment configs
 
-group: ${oc.env:NUPLAN_EXP_ROOT}/exp              # This is where results, logs, config, etc. are saved
-experiment_name: ???                              # Experiment name.
+group: ${oc.env:NUPLAN_EXP_ROOT}/exp    # This is where results, logs, config, etc. are saved
+experiment_name: ???                    # Experiment name.
 
 # Directory structure
 date_format: '%Y.%m.%d.%H.%M.%S'
@@ -17,7 +17,7 @@ log_config: false                                   # Whether to log the final c
 max_number_of_workers: null                         # Set null to disable threading for simulation execution
 seed: 0                                             # Random seed value.
 enable_profiling: false                             # Whether to enable profiler which will be dumped to "profiling" folder
-gpu: true                                           # Whether to use available GPUs during training/simulation
+gpu: False                                          # Whether to use available GPUs during training/simulation
 
 # Logger
 logger_level: info                                  # Level of logger

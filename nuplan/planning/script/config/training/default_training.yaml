@@ -7,8 +7,9 @@ hydra:
     - pkg://nuplan.planning.script.experiments      # Put experiments configs in script/experiments/<exp_dir>
 
 defaults:
-  - default_experiment
-  - default_common
+  # these are for defaults one level higher
+  - default_experiment 
+  - default_common # simulation_builder and filter args in here
 
   # Trainer and callbacks
   - lightning: default_lightning
@@ -16,7 +17,7 @@ defaults:
 
   # Optimizer settings
   - optimizer: adam # [adam, adamw] supported optimizers
-  - lr_scheduler: null # [one_cycle_lr] supported lr_schedulers
+  - lr_scheduler: one_cycle_lr # [one_cycle_lr] supported lr_schedulers
 
   # Data Loading
   - data_loader: default_data_loader
