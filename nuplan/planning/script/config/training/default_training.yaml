@@ -23,11 +23,11 @@ defaults:
   - splitter: ???
 
   # Objectives and metrics
-  - objective: ???
-  - training_metric: ???
+  - objective: imitation_objective
+  - training_metric: [avg_displacement_error, avg_heading_error, final_displacement_error, final_heading_error]
   - data_augmentation: null
 
-objective_aggregate_mode: ??? # How to aggregate multiple objectives, can be 'mean', 'max', 'sum'
+objective_aggregate_mode: mean # How to aggregate multiple objectives, can be 'mean', 'max', 'sum'
 
 # Cache parameters
 cache:
@@ -37,4 +37,4 @@ cache:
   cleanup_cache: false                                # Cleanup cached data in the cache_path, this ensures that new data are generated if the same cache_path is passed
 
 # Mandatory parameters
-py_func: ???                                          # Function to be run inside main (can be "train", "test", "cache")
+py_func: train                                        # Function to be run inside main (can be "train", "test", "cache")
